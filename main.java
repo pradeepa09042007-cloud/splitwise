@@ -14,6 +14,9 @@ public class Main{
         
         int frndscount = 3;
         System.out.println(numfrnds);
+
+        double personshare = totalamount/frndscount;
+        System.out.println(personshare);
         
        
 
