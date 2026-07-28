@@ -4,21 +4,24 @@ public class Main{
     public static void main(String[] args) {
         System.out.println("Splitwise ");
 
-        String name = "max";
-        System.out.println(name);
+  
+        String payerName = "max";
+        double totalamt =500;
 
         
-        double totalamount =500;
-        System.out.println(totalamt);
+        String expLine = payerName + " paid :" + totalamt;
+        System.out.println(expLine);
+        int numfrnds = 3;
 
         
-        int frndscount = 3;
-        System.out.println(numfrnds);
-
-        double personshare = totalamount/frndscount;
-        System.out.println(personshare);
-        
+        double personshare = totalamt/numfrnds;
        
+        
+        String shareLine = "each person pays :" + personshare;
+        System.out.println(shareLine);
+
+    }
+}
 
     }
 }
