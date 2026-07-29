@@ -71,7 +71,7 @@ public class main {
                 }
 
                 default -> {
-                    System.out.println("Invalid choice. Try again!");
+                    System.out.println("Invalid choice");
                 }
             }
         }
