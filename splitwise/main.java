@@ -56,7 +56,7 @@ public class main {
 
                 case 3 -> {
                     if (friendsList.isEmpty()) {
-                        System.out.println("No friends added yet. Add friends first!");
+                        System.out.println("No friends found");
                     } else {
                         for (String name : friendsList) {
                             System.out.println("- " + name);
