@@ -8,9 +8,9 @@ public class main {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<String> friendsList = new ArrayList<>();
-        boolean runstate = true;
 
-        while (runstate == true) {
+
+        f1:while (true) {
             System.out.println("\n====Menu====");
             System.out.println("1. Record Expense");
             System.out.println("2. Add friends");
@@ -65,8 +65,9 @@ public class main {
                 }
 
                 case 0 -> {
-                    System.out.println("Good bye!");
-                    runstate = false;
+                    System.out.println("thank you ");
+                    break f1;
+
                 }
 
                 default -> {
