@@ -1,4 +1,4 @@
-package splitwise.splitwise;
+package splitwise;
 
 import java.util.Scanner;
 import java.util.ArrayList;
