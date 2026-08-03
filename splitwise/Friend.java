@@ -1,4 +1,4 @@
-package splitwise;
+package splitwise.splitwise;
 
 public class Friend {
     private String name;
