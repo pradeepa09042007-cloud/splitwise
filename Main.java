@@ -28,12 +28,12 @@ public class Main{
                         System.out.print("Who paid the expense:");
                         String payerName = sc.nextLine();
                         System.out.print("Total amount paid:");
-                        double totalamt = sc.nextDouble();
+                        double totalAmt = sc.nextDouble();
                         int numfrnds = friendsList.size();
-                        Expense expObj =  new Expense(payerName,totalamt);
-                        String expLine = expObj.getPayerName() + " paid :" + expObj.getAmount();
+                        ExpenseLine expObj =  new ExpenseLine(payerName,totalAmt);
+                        String expLine = expObj.payerName() + " paid :" + expObj.totalAMt();
                         System.out.println(expLine);
-                        double personshare = expObj.getAmount() / numfrnds;
+                        double personshare = expObj.totalAMt() / numfrnds;
                         String shareLine = "each person pays :" + personshare;
                         System.out.println(shareLine);
                     }
