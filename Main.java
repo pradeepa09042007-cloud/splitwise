@@ -1,5 +1,4 @@
 package splitwise;
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.lang.String;
@@ -30,10 +29,11 @@ public class Main{
                         String payerName = sc.nextLine();
                         System.out.print("Total amount paid:");
                         double totalamt = sc.nextDouble();
-                        String expLine = payerName + " paid :" + totalamt;
-                        System.out.println(expLine);
                         int numfrnds = friendsList.size();
-                        double personshare = totalamt / numfrnds;
+                        Expense expObj =  new Expense(payerName,totalamt);
+                        String expLine = expObj.getPayerName() + " paid :" + expObj.getAmount();
+                        System.out.println(expLine);
+                        double personshare = expObj.getAmount() / numfrnds;
                         String shareLine = "each person pays :" + personshare;
                         System.out.println(shareLine);
                     }

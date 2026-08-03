@@ -1,7 +1,7 @@
 package splitwise;
 
 public class Friend {
-    private String name;
+    private final String name;
 
     public Friend(String name){
 
@@ -10,7 +10,7 @@ public class Friend {
 
     public String getName(){
 
-        return name;
+        return this.name;
     }
 
 
